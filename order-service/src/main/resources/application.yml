@@ -12,14 +12,7 @@ resilience4j.circuitbreaker:
       automaticTransitionFromOpenToHalfOpenEnabled: true
       ignoreExceptions:
         - com.codeburps.exception.InvalidRequestException
-
-# TIME LIMITER
-resilience4j.timelimiter:
-  instances:
-    product:
-      timeoutDuration: 2s
-  management.health.circuitbreakers.enabled: true
-
+      
 #SWAGGER
 springdoc:
   swagger-ui:
