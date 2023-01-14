@@ -12,9 +12,4 @@ public interface ProductController {
             produces = "application/json")
     Product getProduct(@PathVariable int productId) throws Exception;
 
-    @GetMapping(
-            value = "/test-data/{test}",
-            produces = "application/json")
-    String test(@PathVariable String test) throws Exception;
-
 }
